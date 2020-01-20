@@ -1,0 +1,29 @@
+.a-body .container {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main-scene {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.main-scene .a-enter-vr {
+	bottom: 65px;
+}
+
+#heatmap {
+    height: 100%;
+    z-index: 99999;
+}
+
+button.show-map-btn {
+    position: absolute;
+    top: 100px;
+    z-index: 999999;
+    right: 10px;
+}

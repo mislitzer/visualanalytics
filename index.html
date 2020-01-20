@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>AFrame Visualisation of Air traffic</title>
+        <link rel="stylesheet" href="./styles/main.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <script type="text/javascript" src="./scripts/jquery.js"></script>
+        <!-- <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script> -->
+        <script src="./scripts/aframe.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOdFYfIizVW0xaNeWi0n0ie2v8U_oNZaM&libraries=visualization">
+</script>
+        <script type="text/javascript" src="./scripts/app.js"></script>
+    </head>
+    <body>  
+        <button class="show-map-btn">SHOW MAP</button>
+
+        <div class="main-scene">
+            <!-- Modal -->
+            <div class="modal fade" id="vrModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="alert alert-danger collapse" id="alert" role="alert">
+                            <strong>No countries selected</strong> Select at least 1 country!
+                        </div>
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Choose countries for VR experience</h5>
+                        </div>
+                        <div class="modal-body selecting">
+                            <button type="button" class="btn btn-warning btn-lg btn-block all">Select All</button>
+                            <button type="button" class="btn btn-outline-primary btn-lg btn-block">Austria</button>
+                            <button type="button" class="btn btn-outline-primary btn-lg btn-block">Germany</button>
+                            <button type="button" class="btn btn-outline-primary btn-lg btn-block">Japan</button>
+                            <button type="button" class="btn btn-outline-primary btn-lg btn-block">South Africa</button>
+                            <button type="button" class="btn btn-outline-primary btn-lg btn-block">Switzerland</button>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="applyCountries" class="btn btn-primary">Apply Countries</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="heatmap"></div>
+
+    </body>
+</html>
