@@ -14,7 +14,7 @@ The whole project is deployed on http://www.martinislitzer.at/visualanalytics.
 I am using jQuery in combination with the AFrame library.
 
 ### Selection of countries to show
-![Start](./report_media/start.png)
+![Start](./report/report_media/start.png)
 *This image shows the initial screen of the application where you can select the origin countries to show later on the visualization.*
 
 On applying the modal selection, i will run the following code:
@@ -39,7 +39,7 @@ jq("body").on("click", "#applyCountries", function () {
 *The first important part of this section is the drawing of the 3d athomsphere in AFrame. The second part is accessing the data within the API with a polling interval of 10 seconds.*
 
 ### Main VR Visualization
-![Start](./report_media/visualization2.png)
+![Start](./report/report_media/visualization2.png)
 *This image shows the loaded traffic data shown as boxes in x, y and z axis. On hovering an airplane, additional data like the origin country, altitude and vertical speed will shown.
 On the bottom right part of the view you have the possibility to switch to the VR mode to use with a glass or a Google cardboard.*
 
@@ -101,7 +101,7 @@ function drawAirplaneDataVr(filteredData, update) {
 *This code snippet shows the main drawing events for the flight traffic data. I scaled the corresponding altitude value of the airplane by a fixed factor of 200.*
 
 ### Map of the returned data
-![Start](./report_media/map2.png)
+![Start](./report/report_media/map2.png)
 *To give an overall preview about the data, I'm using an additional Google Map with a covering heatmap layer.*
 
 
